@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Camp - Empowering Education for Every Child in Nigeria</title>
+    <meta name="description"
+        content="Learning Camp Initiative is dedicated to providing quality foundational education opportunities for underprivileged children across Nigeria, breaking the cycle of poverty through inclusive, evidence-based learning programs.">
+    <meta name="author" content="Learning Camp Initiative">
+    <meta name="keywords"
+        content="education, Nigeria, children, literacy, numeracy, TaRL, learning, nonprofit, foundation">
+
+    <meta property="og:title" content="Learning Camp - Empowering Education for Every Child in Nigeria">
+    <meta property="og:description"
+        content="Transforming lives through quality foundational education. We're dedicated to ensuring every Nigerian child has access to the education they deserve using proven TaRL methodology.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@learningcamp">
+    <meta name="twitter:title" content="Learning Camp - Empowering Education for Every Child">
+    <meta name="twitter:description"
+        content="Closing the learning gap through practical, inclusive education programs in Nigeria">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <link rel="canonical" href="https://learningcamp.org">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(142, 76%, 36%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                            light: 'hsl(142, 56%, 46%)',
+                            dark: 'hsl(142, 86%, 26%)',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(212, 95%, 52%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                            light: 'hsl(212, 85%, 62%)',
+                            dark: 'hsl(212, 100%, 42%)',
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(45, 93%, 47%)',
+                            foreground: 'hsl(215, 25%, 15%)',
+                            light: 'hsl(45, 93%, 57%)',
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(210, 20%, 96%)',
+                            foreground: 'hsl(215, 16%, 47%)',
+                        },
+                        background: 'hsl(0, 0%, 100%)',
+                        foreground: 'hsl(215, 25%, 15%)',
+                        border: 'hsl(214, 32%, 91%)',
+                    },
+                    backgroundImage: {
+                        'gradient-hero': 'linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%)',
+                        'gradient-section': 'linear-gradient(180deg, hsl(210, 20%, 96%) 0%, hsl(0, 0%, 100%) 100%)',
+                        'gradient-card': 'linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 96%) 100%)',
+                        'gradient-premium': 'linear-gradient(135deg, hsl(142, 56%, 46%) 0%, hsl(212, 85%, 62%) 50%, hsl(45, 93%, 57%) 100%)',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px hsl(142, 76%, 36%, 0.1), 0 2px 4px -1px hsl(142, 76%, 36%, 0.06)',
+                        'medium': '0 10px 15px -3px hsl(142, 76%, 36%, 0.1), 0 4px 6px -2px hsl(142, 76%, 36%, 0.05)',
+                        'large': '0 20px 25px -5px hsl(142, 76%, 36%, 0.1), 0 10px 10px -5px hsl(142, 76%, 36%, 0.04)',
+                        'premium': '0 25px 50px -12px hsl(142, 76%, 36%, 0.25)',
+                        'glow': '0 0 40px hsl(142, 76%, 36%, 0.15)',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-in-top': 'slideInTop 1s ease-out',
+                        'slide-in-bottom': 'slideInBottom 1s ease-out',
+                        'slide-in-left': 'slideInLeft 1s ease-out',
+                        'slide-in-right': 'slideInRight 1s ease-out',
+                        'bounce-custom': 'bounceCustom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideInTop: {
+                            '0%': { transform: 'translateY(-30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideInBottom: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideInLeft: {
+                            '0%': { transform: 'translateX(-30px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        slideInRight: {
+                            '0%': { transform: 'translateX(30px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        bounceCustom: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)', opacity: '0.8' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .animate-delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .animate-delay-300 {
+            animation-delay: 300ms;
+        }
+
+        .animate-delay-400 {
+            animation-delay: 400ms;
+        }
+
+        .animate-delay-500 {
+            animation-delay: 500ms;
+        }
+
+        .animate-delay-700 {
+            animation-delay: 700ms;
+        }
+
+        .btn-hero {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-hero:hover {
+            box-shadow: 0 0 40px hsl(142, 76%, 36%, 0.15);
+            transform: scale(1.05);
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, hsl(142, 56%, 46%) 0%, hsl(212, 85%, 62%) 50%, hsl(45, 93%, 57%) 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
+            transform: scale(1.05);
+        }
+
+        .btn-outline-premium {
+            border: 2px solid hsl(142, 76%, 36%);
+            color: hsl(142, 76%, 36%);
+            background: transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-outline-premium:hover {
+            background: hsl(142, 76%, 36%);
+            color: hsl(0, 0%, 100%);
+            box-shadow: 0 10px 15px -3px hsl(142, 76%, 36%, 0.1);
+            transform: scale(1.05);
+        }
+
+        .card-premium {
+            background: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 96%) 100%);
+            box-shadow: 0 20px 25px -5px hsl(142, 76%, 36%, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-premium:hover {
+            box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%);
+        }
+
+        .section-bg {
+            background: linear-gradient(180deg, hsl(210, 20%, 96%) 0%, hsl(0, 0%, 100%) 100%);
+        }
+
+        .hero-image {
+            background-image: url('https://images.pexels.com/photos/28593054/pexels-photo-28593054.jpeg');
+        }
+
+        .team-image-innocent {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">IW</text></svg>');
+        }
+
+        .team-image-blessing {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">BO</text></svg>');
+        }
+
+        .program-image {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23059669"/><rect x="100" y="150" width="600" height="300" rx="20" fill="%23ffffff" opacity="0.9"/><circle cx="200" cy="250" r="30" fill="%23065f46"/><circle cx="300" cy="250" r="30" fill="%23065f46"/><circle cx="400" cy="250" r="30" fill="%23065f46"/><rect x="150" y="320" width="500" height="20" rx="10" fill="%23065f46" opacity="0.6"/><rect x="150" y="360" width="400" height="20" rx="10" fill="%23065f46" opacity="0.4"/></svg>');
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-background font-sans">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 w-full border-b border-gray-200 shadow-soft">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <h1
+                        class="text-2xl font-bold text-primary hover:text-primary-light transition-colors cursor-pointer">
+                        <a href="/">Learning Camp</a>
+                    </h1>
+                </div>
+
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Home</a>
+                        <a href="#about"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">About</a>
+                        <a href="#programs"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Programs</a>
+                        <a href="#contact"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Contact</a>
+                    </div>
+                </nav>
+
+                <div class="hidden md:block">
+                    <button class="btn-hero text-white px-8 py-3 rounded-lg text-base font-semibold shadow-large"
+                        onclick="handleDonate()">
+                        Donate Now
+                    </button>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-foreground hover:text-primary p-2 transition-colors">
+                        <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+                        <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-4 py-6 space-y-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-large">
+                    <a href="#home"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Home</a>
+                    <a href="#about"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">About</a>
+                    <a href="#programs"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Programs</a>
+                    <a href="#contact"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+                    <div class="pt-4">
+                        <button
+                            class="btn-hero w-full text-white px-8 py-3 rounded-lg text-base font-semibold shadow-large"
+                            onclick="handleDonate()">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center hero-bg overflow-hidden">
+        <div class="absolute inset-0 hero-image bg-cover bg-center bg-no-repeat"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 animate-fade-in">
+            <p class="text-lg sm:text-xl mb-4 font-medium opacity-90 animate-slide-in-top animate-delay-200">
+                Every Child Deserves a Chance to Learn
+            </p>
+            <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-slide-in-top animate-delay-300">
+                We're Closing the Learning Gap through Practical, Inclusive Education Programs in Nigeria
+            </h1>
+            <p
+                class="text-lg sm:text-xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed animate-slide-in-top animate-delay-400">
+                Every Child Deserves a Chance to Learn - We're Closing the Learning Gap through Practical,
+                Inclusive Education Programs in Nigeria.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-in-bottom animate-delay-500">
+                <button class="btn-hero text-white px-10 py-4 rounded-lg text-lg font-semibold shadow-large"
+                    onclick="handleDonate()">
+                    Donate Today
+                </button>
+                <button class="btn-outline-premium px-10 py-4 rounded-lg text-lg font-semibold shadow-soft">
+                    <a href="/about-work.html"> Learn About Our Work</a>
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto animate-slide-in-bottom animate-delay-700">
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2">May 2025</div>
+                    <div class="text-lg opacity-90">Completed 10-day TaRL training with TaRL Africa.</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2">June 2025</div>
+                    <div class="text-lg opacity-90">Piloted a 3-week class practice with over 200 students in Dukawuya
+                        Primary School, Kano.</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2">Ongoing</div>
+                    <div class="text-lg opacity-90">Preparing for the full rollout of the Learning Camp Initiative in
+                        Fegge LGA, Kano State</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 section-bg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">About Learning Camp</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    The Learning Camp Initiative is a nonprofit organization committed to helping children in
+                    underserved communities
+                    acquire foundational literacy and numeracy skills. We implement the Teaching at the Right Level
+                    (TaRL) methodology and
+                    the Language Learning from Familiar to Formal (L2F2) approach to ensure that every child, regardless
+                    of background, can
+                    succeed in school.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-in-left">
+                    <h3 class="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <i data-lucide="target" class="h-6 w-6 text-primary"></i>
+                        Our Mission
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        To ensure that every child in Nigeria has access to quality foundational learning through
+                        inclusive, child-centered, and
+                        evidence-based approaches.
+                    </p>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
+                            <span class="text-base">Providing scholarships and educational support to underprivileged
+                                children</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
+                            <span class="text-base">Training and empowering teachers with modern educational
+                                techniques</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
+                            <span class="text-base">Building and renovating schools in underserved communities</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
+                            <span class="text-base">Promoting digital literacy and 21st-century skills</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-premium rounded-xl p-8 animate-slide-in-right">
+                    <h3 class="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <i data-lucide="award" class="h-6 w-6 text-secondary"></i>
+                        Our Vision
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        A Nigeria where every child can read and do basic math before leaving primary school.
+                    </p>
+
+                    <h4 class="text-lg font-semibold text-foreground mb-4">Core Values</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Equity in Education:</strong> Equal opportunities for
+                                all children
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Community engagement:</strong> Collaborative
+                                partnerships
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Sustainability:</strong> Long-term impact focus
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Accountability:</strong> Taking responsibility for
+                                actions and outcomes
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Child-Centered Teaching:</strong> Prioritizing each
+                                learner's needs and interests
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span class="text-gray-600">
+                                <strong class="text-foreground">Innovative Teaching:</strong> Using creative strategies
+                                to enhance learning
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-background">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Programs</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Comprehensive educational initiatives designed to address the diverse needs of Nigerian children and
+                    communities, creating lasting change through targeted interventions.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12 mb-16">
+                <!-- After-School Program -->
+                <div class="card-premium rounded-xl overflow-hidden animate-slide-in-left group">
+                    <div class="overflow-hidden">
+                        <div
+                            class="program-image w-full h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-foreground mb-4">After-School Program</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Learning Camp Initiative (Upcoming) Our flagship after-school program is designed to support
+                            children in public schools
+                            who are falling behind. Using the TaRL and L2F2 methodologies, we assess students, group
+                            them by learning level, and
+                            provide targeted instruction.
+                        </p>
+                        <ul class="space-y-3 text-gray-600 mb-6">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Location: Fegge LGA, Kano State</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Target: 300 children in 4 schools</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Duration: 3 months (2-hour sessions, Monday to Thursday)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Funding: D-Prize (conditional grant)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-premium rounded-xl overflow-hidden animate-slide-in-left group">
+                    <div class="overflow-hidden">
+                        <div
+                            class="program-image w-full h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-foreground mb-4">Teacher Training Initiative</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Teaching at the Right Level (TaRL): We assess students using simple tools and group them based on actual learning
+                            level—not age or grade. Instruction is tailored to each group’s needs, using engaging and playful methods
+                            Language Learning from Familiar to Formal (L2F2):We begin with the mother tongue to teach literacy before transitioning
+                            to English. This method builds comprehension by connecting learning to language that children understand.
+                        </p>
+                        <ul class="space-y-3 text-gray-600 mb-6">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Location: Fegge LGA, Kano State</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Target: 30 eacher in 4 schools</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Duration: 3 months (2-hour sessions, Monday to Thursday)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Funding: D-Prize (conditional grant)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dukawuya Class Practice -->
+                <div class="card-premium rounded-xl overflow-hidden animate-slide-in-right group">
+                    <div class="overflow-hidden">
+                        <div
+                            class="program-image w-full h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-foreground mb-4">Dukawuya Class Practice</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Dukawuya Class Practice (Completed) A 3-week pilot program was implemented at Dukawuya
+                            Primary School, Kano, utilizing
+                            TaRL methods with over 200 students. Children were grouped by ability and received
+                            differentiated instruction tailored
+                            to their needs. By the end of the program, most students showed significant improvement in
+                            their literacy skills.
+                        </p>
+                        <ul class="space-y-3 text-gray-600 mb-6">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Grouping children by learning level</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Practical application of TaRL and L2F2</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-4 w-4 text-primary flex-shrink-0"></i>
+                                <span>Interactive and child-friendly teaching methods</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
+            <div class="mb-16 animate-fade-in">
+                <h2 class="text-center text-3xl font-bold mb-8 text-foreground">Our Approach</h2>
+                <div class="card-premium rounded-xl p-8 max-w-4xl mx-auto text-center">
+                    <div class="text-lg text-gray-600 leading-relaxed space-y-4">
+                        <p>
+                            <strong class="text-foreground">Teaching at the Right Level (TaRL):</strong> We assess
+                            students using simple tools and group them based on actual learning
+                            level—not age or grade. Instruction is tailored to each group's needs, using engaging and
+                            playful methods.
+                        </p>
+                        <p>
+                            <strong class="text-foreground">Language Learning from Familiar to Formal (L2F2):</strong>
+                            We begin with the mother tongue to teach literacy before transitioning
+                            to English. This method builds comprehension by connecting learning to language that
+                            children understand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact -->
+            <div class="mb-16 animate-fade-in">
+                <h2 class="text-center text-3xl font-bold mb-8 text-foreground">Impact</h2>
+                <div class="card-premium rounded-xl p-8 max-w-4xl mx-auto">
+                    <h3 class="text-xl font-bold text-foreground mb-6 text-center">Learning Camp Results</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-lg">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary flex-shrink-0"></i>
+                            <span class="text-gray-600">200+ students reached through the pilot program</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-lg">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary flex-shrink-0"></i>
+                            <span class="text-gray-600">20+ volunteer facilitators trained</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-lg">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary flex-shrink-0"></i>
+                            <span class="text-gray-600">Significant improvement in basic literacy observed within 3
+                                weeks</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-lg">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-primary flex-shrink-0"></i>
+                            <span class="text-gray-600">Strong foundational base for larger-scale implementation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Team Members -->
+            <div class="animate-fade-in">
+                <h2 class="text-center text-3xl font-bold mb-12 text-foreground">Team Members</h2>
+                <div class="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
+                    <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-innocent bg-cover bg-center">
+                                <img class="rounded-full" src="/images/innocent.jpg" alt="Innocent Waziri">
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Innocent Waziri</h3>
+                        <p class="text-gray-600">Founder & Strategic Lead</p>
+                    </div>
+
+                    <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-blessing bg-cover bg-center">
+                                <img class="rounded-full" src="/images/blessing.jpg" alt="Blessing Oyeneme"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Blessing Onyeneme</h3>
+                        <p class="text-gray-600">Program Lead & TaRL Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 section-bg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Ready to make a difference? Contact us to learn more about our programs, volunteer opportunities,
+                    or to discuss partnerships that can help transform lives through education.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="animate-slide-in-left">
+                    <div class="card-premium rounded-xl p-8">
+                        <h3 class="text-xl font-semibold text-foreground mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-primary mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <div class="font-medium text-foreground mb-1">Address</div>
+                                    <div class="text-gray-600">
+                                        123 Education Avenue<br>
+                                        Victoria Island, Lagos<br>
+                                        Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="phone" class="w-6 h-6 text-primary flex-shrink-0"></i>
+                                <div>
+                                    <div class="font-medium text-foreground mb-1">Phone</div>
+                                    <div class="text-gray-600">+234 813 577 9873</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="mail" class="w-6 h-6 text-primary flex-shrink-0"></i>
+                                <div>
+                                    <div class="font-medium text-foreground mb-1">Email</div>
+                                    <div class="text-gray-600">info@learningcamp.org</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="animate-slide-in-right">
+                    <div class="card-premium rounded-xl p-8">
+                        <form id="contact-form" class="space-y-6" method="POST"
+                            action="https://formsubmit.co/emmanueljonathan113@gmail.com" target="hidden-iframe">
+
+                            <!-- Hidden inputs for FormSubmit settings -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_subject" value="New Contact Message">
+                            <input type="hidden" name="_cc" value="emdo2841@gmail.com"><!-- 👈 CC email -->
+
+                            <h3 class="text-xl font-semibold text-foreground mb-4">Send us a message</h3>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="firstName" class="text-sm mb-2 block font-medium text-foreground">First
+                                        Name</label>
+                                    <input id="firstName" name="First Name" required
+                                        class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                        placeholder="Your first name" />
+                                </div>
+                                <div>
+                                    <label for="lastName" class="text-sm mb-2 block font-medium text-foreground">Last
+                                        Name</label>
+                                    <input id="lastName" name="Last Name" required
+                                        class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                        placeholder="Your last name" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email" class="text-sm mb-2 block font-medium text-foreground">Email</label>
+                                <input id="email" type="email" name="Email" required
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                    placeholder="your.email@example.com" />
+                            </div>
+
+                            <div>
+                                <label for="message"
+                                    class="text-sm mb-2 block font-medium text-foreground">Message</label>
+                                <textarea id="message" name="Message" rows="4" required
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none resize-none"
+                                    placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="btn-hero w-full text-white px-8 py-4 rounded-lg text-base font-semibold shadow-large">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Hidden iframe for submission -->
+                <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+                <!-- Thank You Modal -->
+                <div id="thank-you-modal"
+                    class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
+                    <div class="bg-white rounded-lg p-6 max-w-sm w-full shadow text-center">
+                        <h2 class="text-xl font-semibold mb-4">Thank You!</h2>
+                        <p class="text-gray-700">We received your message. We'll get back to you soon.</p>
+                        <div class="mt-6">
+                            <button id="close-modal" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Organization Info -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Learning Camp</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Transforming lives through quality education. We're dedicated to ensuring every Nigerian child
+                        has access to the education they deserve.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="users" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="mail" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#programs" class="text-gray-300 hover:text-white transition-colors">Our
+                                Programs</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Get Involved -->
+                <div>
+                    <h4 class="font-semibold mb-4">Get Involved</h4>
+                    <ul class="space-y-3">
+                        <li><button onclick="handleDonate()"
+                                class="text-gray-300 hover:text-white transition-colors">Donate</button></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Volunteer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Partner with Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <div>
+                            <div class="font-medium text-white">Phone</div>
+                            <div>+234 813 577 9873</div>
+                        </div>
+                        <div>
+                            <div class="font-medium text-white">Email</div>
+                            <div>info@learningcamp.org</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <div class="text-sm text-gray-400">
+                    © 2025 Learning Camp. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <!-- <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 shadow-premium animate-bounce-custom">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check" class="h-8 w-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-foreground mb-2">Thank You!</h3>
+                <p class="text-gray-600 mb-6">We received your message. We'll get back to you soon.</p>
+                <button 
+                    onclick="closeModal()"
+                    class="btn-hero text-white px-6 py-3 rounded-lg text-base font-semibold shadow-medium"
+                >
+                    Close
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"], .nav-link, .mobile-nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        // 📨 Contact form submission (FormSubmit + hidden iframe + modal)
+        const contactForm = document.getElementById("contact-form");
+        const iframe = document.querySelector("iframe[name='hidden-iframe']");
+        const thankYouModal = document.getElementById("thank-you-modal");
+        const closeBtn = document.getElementById("close-modal");
+
+        // Show modal after form submission finishes
+        iframe.addEventListener("load", function () {
+            // Only show if form was just submitted
+            if (contactForm.dataset.submitted === "true") {
+                thankYouModal.classList.remove("hidden");
+                thankYouModal.classList.add("flex");
+
+                // Reset form
+                contactForm.reset();
+                contactForm.dataset.submitted = "false";
+            }
+        });
+
+        // Intercept form submission
+        contactForm.addEventListener("submit", function () {
+            contactForm.dataset.submitted = "true"; // mark form as submitted
+        });
+
+        // Close modal button
+        closeBtn.addEventListener("click", () => {
+            thankYouModal.classList.add("hidden");
+            thankYouModal.classList.remove("flex");
+        });
+
+        // Optional: close modal on background click
+        thankYouModal.addEventListener("click", (e) => {
+            if (e.target === thankYouModal) {
+                thankYouModal.classList.add("hidden");
+                thankYouModal.classList.remove("flex");
+            }
+        });
+        // Donate button functionality
+        function handleDonate() {
+            // In a real application, this would redirect to a donation page
+            alert('Thank you for your interest in donating! This would redirect to our secure donation page.');
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-fade-in, .animate-slide-in-left, .animate-slide-in-right, .animate-slide-in-top, .animate-slide-in-bottom').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 1s ease-out';
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+
+</html>
