@@ -32,7 +32,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
+                    colors: { 
                         primary: {
                             DEFAULT: 'hsl(142, 76%, 36%)',
                             foreground: 'hsl(0, 0%, 100%)',
@@ -173,7 +173,7 @@
         }
 
         .card-premium:hover {
-            box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
+             box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
             transform: translateY(-5px);
         }
 
@@ -346,21 +346,27 @@
                     <ul class="space-y-4 text-gray-600">
                         <li class="flex items-start gap-3">
                             <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
-                            <span class="text-base">Providing scholarships and educational support to underprivileged
-                                children</span>
+                            <span class="text-base">
+                                Teaching and mentoring pupils to improve their learning outcomes
+                            </span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
-                            <span class="text-base">Training and empowering teachers with modern educational
-                                techniques</span>
+                            <span class="text-base">
+                                Training and empowering teachers with modern educational techniques
+                            </span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
-                            <span class="text-base">Building and renovating schools in underserved communities</span>
+                            <span class="text-base">
+                                Supporting access to quality basic education for every child
+                            </span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check-circle" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"></i>
-                            <span class="text-base">Promoting digital literacy and 21st-century skills</span>
+                            <span class="text-base">
+                                Promoting digital literacy and 21st-century skills
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -638,7 +644,7 @@
                     <div class="card-premium rounded-xl p-8">
                         <h3 class="text-xl font-semibold text-foreground mb-6">Contact Information</h3>
                         <div class="space-y-6">
-                            <div class="flex items-start gap-4">
+                            <div class="flex items-start gap-4 hidden">
                                 <i data-lucide="map-pin" class="w-6 h-6 text-primary mt-1 flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1">Address</div>
@@ -653,14 +659,14 @@
                                 <i data-lucide="phone" class="w-6 h-6 text-primary flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1">Phone</div>
-                                    <div class="text-gray-600">+234 813 577 9873</div>
+                                     <div class="text-gray-600"><a href="tel:+234 813 577 9873" style="text-decoration: none;" class="hover:text-black">+234 813 577 9873</a></div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
                                 <i data-lucide="mail" class="w-6 h-6 text-primary flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1">Email</div>
-                                    <div class="text-gray-600">info@learningcamp.org</div>
+                                    <div class="text-gray-600"> <a href="mailto:info@thelearningcamp.org" class="hover:text-black" style="text-decoration: none;">info@thelearningcamp.org</a></div>
                                 </div>
                             </div>
                         </div>
@@ -671,13 +677,13 @@
                 <div class="animate-slide-in-right">
                     <div class="card-premium rounded-xl p-8">
                         <form id="contact-form" class="space-y-6" method="POST"
-                            action="https://formsubmit.co/info@thelearningcamp.org" target="hidden-iframe">
+                            action="https://formsubmit.co/39d25dba5e91c070b9b69e566f1f4035 " target="hidden-iframe">
 
                             <!-- Hidden inputs for FormSubmit settings -->
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="box">
                             <input type="hidden" name="_subject" value="New Contact Message">
-                            <input type="hidden" name="_cc" value="waziri411@gmail.com"><!-- 👈 CC email -->
+                            <!-- <input type="hidden" name="_cc" value="waziri411@gmail.com"> -->
 
                             <h3 class="text-xl font-semibold text-foreground mb-4">Send us a message</h3>
 
@@ -755,7 +761,7 @@
                         has access to the education they deserve.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/wazirii" target="_blank" class="text-gray-400 hover:text-white transition-colors">
                             <i data-lucide="users" class="h-5 w-5"></i>
                         </a>
                        
@@ -783,8 +789,8 @@
                     <ul class="space-y-3">
                         <li><button onclick="handleDonate()"
                                 class="text-gray-300 hover:text-white transition-colors">Donate</button></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Volunteer</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Partner with Us</a>
+                        <li><a href="volunteer.html" class="text-gray-300 hover:text-white transition-colors">Volunteer</a></li>
+                        <li><a href="partner.html" class="text-gray-300 hover:text-white transition-colors">Partner with Us</a>
                         </li>
                     </ul>
                 </div>
@@ -796,13 +802,13 @@
                         <div>
                             <div class="font-medium text-white">Phone</div>
                             <p style="margin-top:16px;">
-                                <a href="tel:+234 813 577 9873" style=" text-decoration:none;">Call +234 813 577 9873</a>
+                                <a href="tel:+234 813 577 9873" class="hover:text-white" style=" text-decoration:none;">Call +234 813 577 9873</a>
                             </p>
                         </div>
                         <div>
                             <div class="font-medium text-white">Email Us</div>
-                            <a href="mailto:info@thelearningcamp.org?subject=Question"
-                                style="display:inline-block; padding:10px 18px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; font-weight:600;">
+                            <a href="mailto:info@thelearningcamp.org?subject=Question" class="hover:text-white"
+                                style="display:inline-block; padding:10px 0; text-decoration:none; border-radius:6px; font-weight:600;">
                                 info@thelearningcamp.org
                             </a>
                         </div>
@@ -818,24 +824,7 @@
         </div>
     </footer>
 
-    <!-- Success Modal -->
-    <!-- <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 shadow-premium animate-bounce-custom">
-            <div class="text-center">
-                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i data-lucide="check" class="h-8 w-8 text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold text-foreground mb-2">Thank You!</h3>
-                <p class="text-gray-600 mb-6">We received your message. We'll get back to you soon.</p>
-                <button 
-                    onclick="closeModal()"
-                    class="btn-hero text-white px-6 py-3 rounded-lg text-base font-semibold shadow-medium"
-                >
-                    Close
-                </button>
-            </div>
-        </div>
-    </div> -->
+   
 
     <script>
         // Initialize Lucide icons

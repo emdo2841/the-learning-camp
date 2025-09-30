@@ -4,66 +4,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Camp - Empowering Education for Every Child</title>
+    <title>Learning Camp - Empowering Education for Every Child in Nigeria</title>
     <meta name="description"
-        content="Learning Camp is dedicated to providing quality education opportunities for underprivileged children across Nigeria, breaking the cycle of poverty through learning.">
+        content="Learning Camp Initiative is dedicated to providing quality foundational education opportunities for underprivileged children across Nigeria, breaking the cycle of poverty through inclusive, evidence-based learning programs.">
+    <meta name="author" content="Learning Camp Initiative">
+    <meta name="keywords"
+        content="education, Nigeria, children, literacy, numeracy, TaRL, learning, nonprofit, foundation">
+
+    <meta property="og:title" content="Learning Camp - Empowering Education for Every Child in Nigeria">
+    <meta property="og:description"
+        content="Transforming lives through quality foundational education. We're dedicated to ensuring every Nigerian child has access to the education they deserve using proven TaRL methodology.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@learningcamp">
+    <meta name="twitter:title" content="Learning Camp - Empowering Education for Every Child">
+    <meta name="twitter:description"
+        content="Closing the learning gap through practical, inclusive education programs in Nigeria">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <link rel="canonical" href="https://learningcamp.org">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(142, 76%, 36%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                            light: 'hsl(142, 56%, 46%)',
+                            dark: 'hsl(142, 86%, 26%)',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(212, 95%, 52%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                            light: 'hsl(212, 85%, 62%)',
+                            dark: 'hsl(212, 100%, 42%)',
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(45, 93%, 47%)',
+                            foreground: 'hsl(215, 25%, 15%)',
+                            light: 'hsl(45, 93%, 57%)',
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(210, 20%, 96%)',
+                            foreground: 'hsl(215, 16%, 47%)',
+                        },
+                        background: 'hsl(0, 0%, 100%)',
+                        foreground: 'hsl(215, 25%, 15%)',
+                        border: 'hsl(214, 32%, 91%)',
+                    },
+                    backgroundImage: {
+                        'gradient-hero': 'linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%)',
+                        'gradient-section': 'linear-gradient(180deg, hsl(210, 20%, 96%) 0%, hsl(0, 0%, 100%) 100%)',
+                        'gradient-card': 'linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 96%) 100%)',
+                        'gradient-premium': 'linear-gradient(135deg, hsl(142, 56%, 46%) 0%, hsl(212, 85%, 62%) 50%, hsl(45, 93%, 57%) 100%)',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px hsl(142, 76%, 36%, 0.1), 0 2px 4px -1px hsl(142, 76%, 36%, 0.06)',
+                        'medium': '0 10px 15px -3px hsl(142, 76%, 36%, 0.1), 0 4px 6px -2px hsl(142, 76%, 36%, 0.05)',
+                        'large': '0 20px 25px -5px hsl(142, 76%, 36%, 0.1), 0 10px 10px -5px hsl(142, 76%, 36%, 0.04)',
+                        'premium': '0 25px 50px -12px hsl(142, 76%, 36%, 0.25)',
+                        'glow': '0 0 40px hsl(142, 76%, 36%, 0.15)',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-in-top': 'slideInTop 1s ease-out',
+                        'slide-in-bottom': 'slideInBottom 1s ease-out',
+                        'slide-in-left': 'slideInLeft 1s ease-out',
+                        'slide-in-right': 'slideInRight 1s ease-out',
+                        'bounce-custom': 'bounceCustom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideInTop: {
+                            '0%': { transform: 'translateY(-30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideInBottom: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideInLeft: {
+                            '0%': { transform: 'translateX(-30px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        slideInRight: {
+                            '0%': { transform: 'translateX(30px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        bounceCustom: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)', opacity: '0.8' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .animate-delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .animate-delay-300 {
+            animation-delay: 300ms;
+        }
+
+        .animate-delay-400 {
+            animation-delay: 400ms;
+        }
+
+        .animate-delay-500 {
+            animation-delay: 500ms;
+        }
+
+        .animate-delay-700 {
+            animation-delay: 700ms;
+        }
+
+        .btn-hero {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-hero:hover {
+            box-shadow: 0 0 40px hsl(142, 76%, 36%, 0.15);
+            transform: scale(1.05);
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, hsl(142, 56%, 46%) 0%, hsl(212, 85%, 62%) 50%, hsl(45, 93%, 57%) 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
+            transform: scale(1.05);
+        }
+
+        .btn-outline-premium {
+            border: 2px solid hsl(142, 76%, 36%);
+            color: hsl(142, 76%, 36%);
+            background: transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-outline-premium:hover {
+            background: hsl(142, 76%, 36%);
+            color: hsl(0, 0%, 100%);
+            box-shadow: 0 10px 15px -3px hsl(142, 76%, 36%, 0.1);
+            transform: scale(1.05);
+        }
+
+        .card-premium {
+            background: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 96%) 100%);
+            box-shadow: 0 20px 25px -5px hsl(142, 76%, 36%, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-premium:hover {
+            box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
+            transform: translateY(-5px);
+        }
+
+        /* .hero-bg {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(212, 95%, 52%) 100%);
+        }
+
+        .section-bg {
+            background: linear-gradient(180deg, hsl(210, 20%, 96%) 0%, hsl(0, 0%, 100%) 100%);
+        } */
+
+        .hero-image {
+            background-image: url('https://images.pexels.com/photos/28593054/pexels-photo-28593054.jpeg');
+        }
+
+        .team-image-innocent {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">IW</text></svg>');
+        }
+
+        .team-image-blessing {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">BO</text></svg>');
+        }
+
+        .program-image {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23059669"/><rect x="100" y="150" width="600" height="300" rx="20" fill="%23ffffff" opacity="0.9"/><circle cx="200" cy="250" r="30" fill="%23065f46"/><circle cx="300" cy="250" r="30" fill="%23065f46"/><circle cx="400" cy="250" r="30" fill="%23065f46"/><rect x="150" y="320" width="500" height="20" rx="10" fill="%23065f46" opacity="0.6"/><rect x="150" y="360" width="400" height="20" rx="10" fill="%23065f46" opacity="0.4"/></svg>');
+        }
+    </style>
 </head>
 
-<body class="min-h-screen bg-slate-50">
+<body class="min-h-screen bg-background font-sans">
     <!-- Header -->
-    <header class="bg-white/95 backdrop-blur sticky top-0 z-50 w-full border-b border-slate-200">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 w-full border-b border-gray-200 shadow-soft">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
-                <div class="flex items- center">
-                    <h1 class="text-2xl font-bold text-green-600"><a href="/">Learning Camp</a></h1>
+                <div class="flex items-center">
+                    <h1
+                        class="text-2xl font-bold text-primary hover:text-primary-light transition-colors cursor-pointer">
+                        <a href="/">Learning Camp</a>
+                    </h1>
                 </div>
 
                 <nav class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="/"
-                            class="text-slate-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="/about-work.html"
-                            class="text-slate-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="index.html"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Home</a>
+                        <a href="about-work.html"
+                            class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">About</a>
                         
-                        <!-- <a href="#impact" class="text-slate-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Impact</a> -->
-                        <a href="#contact"
-                            class="hidden text-slate-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <button id="open-form"
+                            class="open-form-btn w-full bg-white hover:bg-green-700 hover:text-white px-4 py-2 rounded-md transition-colors px-6 py-3 rounded">
+                            Contact Us
+                        </button>
                     </div>
                 </nav>
 
                 <div class="hidden md:block">
-                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
+                    <button class="btn-hero text-white px-8 py-3 rounded-lg text-base font-semibold shadow-large"
+                        onclick="handleDonate()">
                         Donate Now
                     </button>
                 </div>
 
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-green-600 p-2">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="mobile-menu-btn" class="text-foreground hover:text-primary p-2 transition-colors">
+                        <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+                        <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-slate-200">
-                    <a href="/"
-                        class="text-slate-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="/about-work.html"
-                        class="text-slate-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="/programs"
-                        class="text-slate-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Programs</a>
-                    <!-- <a href="#impact" class="text-slate-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Impact</a> -->
-                    <a href="#contact"
-                        class="hidden text-slate-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <div class="px-4 py-6 space-y-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-large">
+                    <a href="index.html"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Home</a>
+                    <a href="about-work.html"
+                        class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">About</a>
+                    <button id="open-form"
+                        class="open-form-btn w-full bg-white hover:bg-green-700 hover:text-white px-4 py-2 rounded-md transition-colors px-6 py-3 rounded">
+                        Contact Us
+                    </button>
                     <div class="pt-4">
                         <button
-                            class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
+                            class="btn-hero w-full text-white px-8 py-3 rounded-lg text-base font-semibold shadow-large"
+                            onclick="handleDonate()">
                             Donate Now
                         </button>
                     </div>
@@ -72,63 +267,122 @@
         </div>
     </header>
     <div class="flex justify-center w-full mt-10 mb-10">
-  <div class="w-full max-w-2xl px-4"> <!-- Wider container, optional padding -->
-    <!-- Contact Form -->
-    <form id="contact-form" method="POST" action="https://formsubmit.co/emmanueljonathan113@gmail.com">
-      <!-- Hidden inputs for FormSubmit settings -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_subject" value="New Contact Message">
+        <div class="w-full max-w-2xl px-4"> <!-- Wider container, optional padding -->
+            <!-- Contact Form -->
+            <form id="volunteer-form" method="POST" action="https://formsubmit.co/39d25dba5e91c070b9b69e566f1f4035"
+                target="hidden-iframe" class="bg-white p-6 rounded-lg shadow space-y-4">
+                <!-- Hidden inputs for FormSubmit settings -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New Contact Message">
 
-      <h2 class="font-semibold text-2xl mb-4">Partner with us</h2>
+                <h2 class="font-semibold text-2xl mb-4">Partner with us</h2>
 
-      <div class="mb-4">
-        <label class="block text-sm mb-1" for="firstName">First Name</label>
-        <input id="firstName" name="First Name" placeholder="John" required class="w-full border px-4 py-2 rounded" />
-      </div>
+                <div class="mb-4">
+                    <label class="block text-sm mb-1" for="firstName">First Name</label>
+                    <input id="firstName" name="First Name" placeholder="John" required
+                        class="w-full border px-4 py-2 rounded" />
+                </div>
 
-      <div class="mb-4">
-        <label class="block text-sm mb-1" for="lastName">Last Name</label>
-        <input id="lastName" name="Last Name" placeholder="Doe" required class="w-full border px-4 py-2 rounded" />
-      </div>
+                <div class="mb-4">
+                    <label class="block text-sm mb-1" for="lastName">Last Name</label>
+                    <input id="lastName" name="Last Name" placeholder="Doe" required
+                        class="w-full border px-4 py-2 rounded" />
+                </div>
 
-      <div class="mb-4">
-        <label class="block text-sm mb-1" for="profession">Profession</label>
-        <input id="profession" name="Profession" placeholder="Teacher" required class="w-full border px-4 py-2 rounded" />
-      </div>
+                <div class="mb-4">
+                    <label class="block text-sm mb-1" for="Organization">Profession</label>
+                    <input id="Organization" name="Organization" placeholder="Teacher" required
+                        class="w-full border px-4 py-2 rounded" />
+                </div>
 
-      <div class="mb-4">
-        <label class="block text-sm mb-1" for="email">Email</label>
-        <input id="email" type="email" placeholder="johndoe@gmail.com" name="Email" required class="w-full border px-4 py-2 rounded" />
-      </div>
+                <div class="mb-4">
+                    <label class="block text-sm mb-1" for="email">Email</label>
+                    <input id="email" type="email" placeholder="johndoe@gmail.com" name="Email" required
+                        class="w-full border px-4 py-2 rounded" />
+                </div>
 
-      <div class="mb-4">
-        <label class="block text-sm mb-1" for="message">Message</label>
-        <textarea id="message" placeholder="Tell us more about your partnership" name="Message" rows="4" required class="w-full border px-4 py-2 rounded"></textarea>
-      </div>
+                <div class="mb-4">
+                    <label class="block text-sm mb-1" for="message">Message</label>
+                    <textarea id="message" placeholder="Tell us more about your partnership" name="Message" rows="4"
+                        required class="w-full border px-4 py-2 rounded"></textarea>
+                </div>
 
-      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded text-lg">
-        Send Message
-      </button>
-    </form>
+                <button type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded text-lg">
+                    Send Message
+                </button>
+            </form>
 
-    <!-- Hidden iframe for submission -->
-    <iframe name="hidden-iframe" style="display: none;"></iframe>
+            <!-- Hidden iframe for submission -->
+            
+        </div>
+    </div>
+    <div id="form-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-lg w-full mx-4 shadow-lg relative">
+            <!-- Close X button -->
+            <button id="close-form"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
 
+            <!-- Contact Form -->
+            <form id="contact-form" method="POST" action="https://formsubmit.co/39d25dba5e91c070b9b69e566f1f4035"
+                target="hidden-iframe" class="space-y-6">
+
+                <!-- Hidden inputs -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New Contact Message">
+                <!-- <input type="hidden" name="_cc" value="waziri411@gmail.com"> -->
+                <input type="hidden" name="_next" value="about:blank">
+
+                <h3 class="text-xl font-semibold mb-4">Send us a message</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="firstName" class="text-sm font-medium">First Name</label>
+                        <input id="firstName" name="First Name" required
+                            class="w-full border px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                    </div>
+                    <div>
+                        <label for="lastName" class="text-sm font-medium">Last Name</label>
+                        <input id="lastName" name="Last Name" required
+                            class="w-full border px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="text-sm font-medium">Email</label>
+                    <input id="email" type="email" name="Email" required
+                        class="w-full border px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                </div>
+
+                <div>
+                    <label for="message" class="text-sm font-medium">Message</label>
+                    <textarea id="message" name="Message" rows="4" required
+                        class="w-full border px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg w-full font-semibold">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Hidden iframe -->
+    <iframe name="hidden-iframe" style="display:none;"></iframe>
     <!-- Thank You Modal -->
     <div id="thank-you-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
-      <div class="bg-white rounded-lg p-6 max-w-sm w-full shadow text-center">
-        <h2 class="text-xl font-semibold mb-4">Thank You!</h2>
-        <p class="text-gray-700">We received your message. We'll get back to you soon.</p>
-        <div class="mt-6">
-          <button id="close-modal" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
-            Close
-          </button>
+        <div class="bg-white rounded-lg p-6 max-w-sm w-full shadow text-center">
+            <h2 class="text-xl font-semibold mb-4">Thank You!</h2>
+            <p class="text-gray-700">We received your message. We'll get back to you soon.</p>
+            <div class="mt-6">
+                <button id="close-modal" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+                    Close
+                </button>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
+
 
     <!-- Footer -->
     <footer class="bg-slate-800 text-white">
@@ -161,10 +415,12 @@
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/about-work.html" class="text-slate-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="about-work.html" class="text-slate-300 hover:text-white transition-colors">About
+                                Us</a></li>
                         <li><a href="programs.html" class="text-slate-300 hover:text-white transition-colors">Our
                                 Programs</a></li>
-                        <li class="hidden"><a href="#contact" class="text-slate-300 hover:text-white transition-colors">Contact Us</a>
+                        <li class="hidden"><a href="#contact"
+                                class="text-slate-300 hover:text-white transition-colors">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -174,9 +430,9 @@
                     <h4 class="font-semibold mb-4">Get Involved</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#" class="text-slate-300 hover:text-white transition-colors">Donate</a></li>
-                        <li><a href="volunteer.html" class="text-slate-300 hover:text-white transition-colors">Volunteer</a></li>
-                        <li class="hidden"><a href="/partner.html" class="text-slate-300 hover:text-white transition-colors">Partner with Us</a>
-                        </li>
+                        <li><a href="volunteer.html"
+                                class="text-slate-300 hover:text-white transition-colors">Volunteer</a></li>
+                        
                     </ul>
                 </div>
 
@@ -196,7 +452,7 @@
                         </div>
                         <div>
                             <div class="font-medium text-white">Email</div>
-                            <div>info@learningcamp.org</div>
+                            <div>info@thelearningcamp.org</div>
                         </div>
                     </div>
                 </div>
@@ -210,7 +466,72 @@
         </div>
     </footer>
 
+
+
     <script src="/script.js" defer></script>
+    
+    <!-- ✅ Fixed Inline Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+
+            // === Handle Mobile Menu Toggle ===
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const menuIcon = document.getElementById("menu-icon");
+            const closeIcon = document.getElementById("close-icon");
+
+            mobileMenuBtn?.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+                menuIcon.classList.toggle("hidden");
+                closeIcon.classList.toggle("hidden");
+            });
+
+            // === Smooth Scroll for Nav Links ===
+            document.querySelectorAll('a[href^="#"], .nav-link, .mobile-nav-link').forEach(anchor => {
+                anchor.addEventListener("click", e => {
+                    e.preventDefault();
+                    const target = document.querySelector(anchor.getAttribute("href"));
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth", block: "start" });
+                        mobileMenu.classList.add("hidden");
+                        menuIcon.classList.remove("hidden");
+                        closeIcon.classList.add("hidden");
+                    }
+                });
+            });
+
+            // === Handle ALL FormSubmit forms (contact + volunteer) ===
+            const thankYouModal = document.getElementById("thank-you-modal");
+            const closeModalBtn = document.getElementById("close-modal");
+
+            document.querySelectorAll("form[action*='formsubmit.co']").forEach(form => {
+                form.addEventListener("submit", e => {
+                    e.preventDefault();          // prevent page refresh
+                    form.submit();               // still send to FormSubmit
+                    setTimeout(() => {
+                        thankYouModal.classList.remove("hidden");
+                        thankYouModal.classList.add("flex");
+                        form.reset();
+                    }, 1500);
+                });
+            });
+
+            // Close modal
+            closeModalBtn?.addEventListener("click", () => {
+                thankYouModal.classList.add("hidden");
+                thankYouModal.classList.remove("flex");
+            });
+
+            // Close when clicking outside
+            thankYouModal?.addEventListener("click", e => {
+                if (e.target === thankYouModal) {
+                    thankYouModal.classList.add("hidden");
+                    thankYouModal.classList.remove("flex");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
