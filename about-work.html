@@ -36,8 +36,9 @@
                 </nav>
 
                 <div class="hidden md:block">
-                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
-                        Donate Now
+                    <button class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors"
+                        onclick="handleDonate()">
+                        Get Involved
                     </button>
                 </div>
 
@@ -64,8 +65,8 @@
                     </button>
                     <div class="pt-4">
                         <button
-                            class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
-                            Donate Now
+                            class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors" onclick="handleDonate()">
+                            Get Involved
                         </button>
                     </div>
                 </div>
@@ -86,8 +87,7 @@
         <section class="mt-8">
             <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Mission</h3>
             <p class="text-gray-700 leading-relaxed">
-                To ensure that every child in Nigeria has access to quality foundational learning through inclusive, child-centered, and
-                evidence-based approaches.
+                Ensuring quality foundational learning for every Nigerian child through inclusive approaches.
 
             </p>
         </section>
@@ -95,18 +95,18 @@
         <section class="mt-8">
             <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Vision</h3>
             <p class="text-gray-700 leading-relaxed">
-                A Nigeria where every child can read and do basic math before leaving primary school.
+                A future where every Nigerian child completes primary school with the ability to read and do basic math. A Nigeria where every child can read and do basic math before leaving primary school.
             </p>
         </section>
 
         <section class="mt-8">
             <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Core Values</h3>
             <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>Inclusiveness and Equity</li>
-                <li>Transparency and Accountability</li>
-                <li>Community-Driven Solutions</li>
-                <li>Empowerment through Education</li>
-                <li>Innovation and Sustainability</li>
+                <li>Equity in Education</li>
+                <li>Child-Centered Learning</li>
+                <li>Accountability</li>
+                <li>Community Engagement</li>
+                <li>Innovation in Teaching</li>
             </ul>
         </section>
 
@@ -114,20 +114,20 @@
             <h3 class="text-2xl font-semibold text-gray-800 mb-3">Impact Areas</h3>
             <div class="grid md:grid-cols-2 gap-6 text-gray-700">
                 <div>
-                    <h4 class="font-semibold mb-2">📚 Education Access</h4>
-                    <p>Building learning environments and resources for underserved children.</p>
+                    <!-- <h4 class="font-semibold mb-2">Education Access</h4> -->
+                    <p> 350 students currently participating in the pilot program</p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-2">👩‍🏫 Teacher Training</h4>
-                    <p>Equipping educators with modern teaching tools and mentorship.</p>
+                    <!-- <h4 class="font-semibold mb-2">Teacher Training</h4> -->
+                    <p>20+ volunteer facilitators trained</p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-2">💼 Youth Empowerment</h4>
-                    <p>Supporting skills acquisition, entrepreneurship, and leadership.</p>
+                    <!-- <h4 class="font-semibold mb-2">Youth Empowerment</h4> -->
+                    <p>Significant improvement in basic literacy observed within 3 weeks</p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-2">🤝 Community Engagement</h4>
-                    <p>Partnering with communities to identify and solve local challenges.</p>
+                    <!-- <h4 class="font-semibold mb-2"> Community Engagement</h4> -->
+                    <p>Strong foundational base for larger-scale implementation.</p>
                 </div>
             </div>
         </section>
@@ -138,7 +138,7 @@
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
         
                 <!-- Contact Form -->
-                <form id="contact-form" method="POST" action="https://formsubmit.co/emmanueljonathan113@gmail.com"
+                <form id="contact-form" method="POST" action="https://formsubmit.co/info@thelearningcamp.org"
                     target="hidden-iframe" class="space-y-6">
         
                     <!-- Hidden inputs -->
@@ -200,7 +200,7 @@
 
         <div class="mt-10">
             <a href="/partner.html" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
-                Partner With Us
+                Support A Camp
             </a>
         </div>
     </main>
@@ -348,6 +348,10 @@
                     }
                 });
             });
+            function handleDonate() {
+                    // In a real application, this would redirect to a donation page
+                    window.location.href = '/partner.html';
+                }
 
     </script>
 
