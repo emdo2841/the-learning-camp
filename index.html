@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Karatu Learning | Education NGO in Northern Nigeria & Kano</title>
-    
-    <meta name="description"
-        content="Karatu Learning is a non-profit NGO in Northern Nigeria dedicated to improving literacy and numeracy for children in Kano and beyond using the TaRL methodology.">
-    
+    <title>Karatu Learning | Education NGO in Northern Nigeria</title>
+    <meta name="description" content="Karatu Learning is a non-profit organization dedicated to empowering education and improving literacy for children across Northern Nigeria using TaRL methodology.">
+    <meta name="keywords" content="Karatu Learning, Education NGO Nigeria, Northern Nigeria Education, Literacy Charity, School Support Abuja, Kano, Kaduna, TaRL">
     <meta name="author" content="Karatu Learning">
-    <meta name="keywords"
-        content="Karatu Learning, Education NGO Northern Nigeria, Kano Education Charity, TaRL Nigeria, literacy NGO, child education Africa, numeracy programs">
+    <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Karatu Learning - Empowering Education in Northern Nigeria">
-    <meta property="og:description"
-        content="We provide quality foundational education to underprivileged children in Kano and Northern Nigeria using the proven TaRL methodology.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://karatulearning.org">
-    <meta property="og:image" content="https://karatulearning.org/images/share-image.jpg"> <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@karatulearning"> <meta name="twitter:title" content="Karatu Learning - Education NGO in Northern Nigeria">
-    <meta name="twitter:description"
-        content="Closing the literacy gap in Northern Nigeria through practical, inclusive education programs.">
-    <meta name="twitter:image" content="https://karatulearning.org/images/share-image.jpg"> <link rel="canonical" href="https://karatulearning.org">
+    <meta property="og:url" content="https://karatulearning.org/">
+    <meta property="og:title" content="Karatu Learning - Empowering Education in Northern Nigeria">
+    <meta property="og:description" content="We are dedicated to providing quality education access to every child in Northern Nigeria using proven methodologies.">
+    <meta property="og:image" content="https://karatulearning.org/images/share-image.jpg"> 
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://karatulearning.org/">
+    <meta name="twitter:title" content="Karatu Learning - Education NGO">
+    <meta name="twitter:description" content="Empowering children in Northern Nigeria through education and literacy programs.">
+    <meta name="twitter:image" content="https://karatulearning.org/images/share-image.jpg">
+
+    <link rel="canonical" href="https://karatulearning.org">
 
     <script type="application/ld+json">
     {
@@ -32,18 +32,15 @@
       "name": "Karatu Learning",
       "url": "https://karatulearning.org",
       "logo": "https://karatulearning.org/images/logo.png",
-      "description": "An education NGO based in Northern Nigeria focused on literacy, numeracy, and the TaRL methodology.",
+      "description": "An education NGO based in Northern Nigeria focused on literacy and learning camps.",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Northern Nigeria"
       },
-      "location": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Kano",
-          "addressCountry": "NG"
-        }
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NG",
+        "addressRegion": "Kano" 
       },
       "sameAs": [
         "https://www.facebook.com/wazirii",
@@ -52,6 +49,10 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
@@ -59,21 +60,25 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Raleway', 'sans-serif'],
+                        serif: ['Raleway', 'serif'], 
+                    },
                     colors: {
                         primary: {
-                            DEFAULT: 'hsl(142, 76%, 36%)',
+                            DEFAULT: 'hsl(142, 76%, 36%)', // Green
                             foreground: 'hsl(0, 0%, 100%)',
                             light: 'hsl(142, 56%, 46%)',
                             dark: 'hsl(142, 86%, 26%)',
                         },
                         secondary: {
-                            DEFAULT: 'hsl(212, 95%, 52%)',
+                            DEFAULT: 'hsl(212, 95%, 52%)', // Blue
                             foreground: 'hsl(0, 0%, 100%)',
                             light: 'hsl(212, 85%, 62%)',
                             dark: 'hsl(212, 100%, 42%)',
                         },
                         accent: {
-                            DEFAULT: 'hsl(45, 93%, 47%)',
+                            DEFAULT: 'hsl(45, 93%, 47%)', // Yellow/Gold
                             foreground: 'hsl(215, 25%, 15%)',
                             light: 'hsl(45, 93%, 57%)',
                         },
@@ -82,7 +87,7 @@
                             foreground: 'hsl(215, 16%, 47%)',
                         },
                         background: 'hsl(0, 0%, 100%)',
-                        foreground: 'hsl(215, 25%, 15%)',
+                        foreground: 'hsl(215, 25%, 15%)', // Dark Text
                         border: 'hsl(214, 32%, 91%)',
                     },
                     backgroundImage: {
@@ -153,6 +158,7 @@
             box-shadow: 0 0 40px hsl(142, 76%, 36%, 0.15);
             transform: scale(1.05);
         }
+
         .btn-premium {
             background: linear-gradient(135deg, hsl(142, 56%, 46%) 0%, hsl(212, 85%, 62%) 50%, hsl(45, 93%, 57%) 100%);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,6 +167,7 @@
             box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
             transform: scale(1.05);
         }
+
         .btn-outline-premium {
             border: 2px solid hsl(142, 76%, 36%);
             color: hsl(142, 76%, 36%);
@@ -173,6 +180,7 @@
             box-shadow: 0 10px 15px -3px hsl(142, 76%, 36%, 0.1);
             transform: scale(1.05);
         }
+
         .card-premium {
             background: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 96%) 100%);
             box-shadow: 0 20px 25px -5px hsl(142, 76%, 36%, 0.1);
@@ -182,7 +190,8 @@
             box-shadow: 0 25px 50px -12px hsl(142, 76%, 36%, 0.25);
             transform: translateY(-5px);
         }
-        /* Fallback Placeholder classes kept from your original code */
+
+        /* Fallback Placeholders */
         .team-image-innocent { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">IW</text></svg>'); }
         .team-image-blessing { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="%23059669"/><circle cx="256" cy="200" r="80" fill="%23ffffff" opacity="0.9"/><rect x="176" y="280" width="160" height="200" rx="20" fill="%23ffffff" opacity="0.9"/><text x="256" y="450" text-anchor="middle" font-family="Arial" font-size="24" fill="%23065f46">BO</text></svg>'); }
         .program-image { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="%23059669"/><rect x="100" y="150" width="600" height="300" rx="20" fill="%23ffffff" opacity="0.9"/><circle cx="200" cy="250" r="30" fill="%23065f46"/><circle cx="300" cy="250" r="30" fill="%23065f46"/><circle cx="400" cy="250" r="30" fill="%23065f46"/><rect x="150" y="320" width="500" height="20" rx="10" fill="%23065f46" opacity="0.6"/><rect x="150" y="360" width="400" height="20" rx="10" fill="%23065f46" opacity="0.4"/></svg>'); }
@@ -195,7 +204,7 @@
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center">
                     <h1 class="text-2xl font-bold text-primary hover:text-primary-light transition-colors cursor-pointer">
-                        <a href="/" title="Karatu Learning Homepage">Karatu Learning</a>
+                        <a href="/">Karatu Learning </a>
                     </h1>
                 </div>
 
@@ -237,11 +246,12 @@
 
             <h1 class="text-4xl sm:text-4xl lg:text-6xl text-black mt-[120px] font-bold mb-6 leading-tight animate-slide-in-top animate-delay-300">
                 Transforming Education <br>
-                <span class="text-green-600">Across Northern Nigeria</span>
+                <span class="text-green-600">Across Nigeria</span>
             </h1>
 
             <p class="text-xxl sm:text-xl text-gray-400 mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed animate-slide-in-top animate-delay-400">
-                Implementing innovative, evidence-based teaching methodologies (TaRL) to improve <br>educational outcomes for students in Kano and throughout Northern Nigeria.
+                Implementing innovative, evidence-based teaching methodologies to improve <br>educational outcomes for
+                students throughout Nigeria
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-in-bottom animate-delay-500 mt-30">
@@ -256,38 +266,44 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto animate-slide-in-bottom animate-delay-700">
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow w-64 mx-auto">
                     <p class="text-4xl font-bold text-green-600">398</p>
-                    <p class="text-xl text-gray-500">Students Enrolled</p>
+                    <p class="text-xl text-gray-500">Students Enrolled </p>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow w-64 mx-auto">
                     <p class="text-4xl font-bold text-green-600">57</p>
-                    <p class="text-xl text-gray-500">Teachers Mentored</p>
+                    <p class="text-xl text-gray-500">Teachers Mentored </p>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-glow w-64 mx-auto">
-                    <p class="text-4xl font-bold text-green-600">Kano</p>
-                    <p class="text-xl text-gray-500">Current Focus State</p>
+                    <p class="text-4xl font-bold text-green-600">Nigeria</p>
+                    <p class="text-xl text-gray-500">Coverage</p>
                 </div>
             </div>
 
         </div>
     </section>
 
+
     <section id="about" class="py-20 section-bg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
                 <p class="text-xl text-gray-500 max-w-4xl mx-auto leading-relaxed">
-                    Karatu Learning is dedicated to implementing innovative education programs <br> across Northern Nigeria, transforming how students learn and teachers teach through evidence-based methodologies.
+                    Karatu Learning is dedicated to implementing innovative education programs <br> across Nigeria,
+                    transforming how students learn and teachers teach through evidence- <br>based methodologies.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-stretch justify-center">
+
                 <div class="rounded-xl p-8 animate-slide-in-right bg-[#F6FCF7] h-full text-center">
                     <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
                         <i data-lucide="target" class="h-12 w-12 text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Student-Centered Learning</h3>
+                    <h3 class="text-2xl font-bold text-black mb-4">
+                        Student-Centered Learning
+                    </h3>
                     <p class="text-gray-500 mb-6 text-md leading-relaxed">
-                        Our adaptive learning approach meets students where they are, ensuring every child receives instruction matched to their current learning level.
+                        Our adaptive learning approach meets students where they are, ensuring every child receives
+                        instruction matched to their current learning level.
                     </p>
                 </div>
 
@@ -295,9 +311,12 @@
                     <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
                         <i data-lucide="users-round" class="h-12 w-12 text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Teacher Empowerment</h3>
+                    <h3 class="text-2xl font-bold text-black mb-4">
+                        Teacher Empowerment
+                    </h3>
                     <p class="text-gray-500 mb-6 text-md leading-relaxed">
-                        Through our peer mentorship programs, we build sustainable capacity by empowering teachers with the skills and confidence to transform their classrooms.
+                        Through our peer mentorship programs, we build sustainable capacity by empowering teachers with
+                        the skills and confidence to transform their classrooms.
                     </p>
                 </div>
             </div>
@@ -308,25 +327,31 @@
         <section class="w-[95%] flex flex-col md:flex-row items-center rounded-lg bg-green-800 p-12 gap-4">
             <div class="flex-1 text-white">
                 <p class="font-bold text-lg">D-Prize Grant Recipient</p>
-                <p>Proudly supported by D-Prize to scale our impact and reach more students across Nigeria.</p>
+                <p>Proudly supported by D-Prize to scale our impact and reach more students across Nigeria</p>
             </div>
+
             <div>
-                <button class="bg-white text-green-700 font-bold rounded px-6 py-3">Funded Initiative</button>
+                <button class="bg-white text-green-700 font-bold rounded px-6 py-3">
+                    Funded Initiative
+                </button>
             </div>
         </section>
     </div>
 
+
     <div class="bg-[#F6FCF7] mt-40">
         <section id="programs" class="py-20 bg-transparent">
+
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate-fade-in">
                     <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Programs</h2>
                     <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Innovative education initiatives designed to create lasting impact in Nigerian communities.
+                        Innovative education initiatives designed to create lasting impact in Nigerian communities
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 p-4 lg:p-8 mb-16">
+
                     <div class="card-premium rounded-xl overflow-hidden animate-slide-in-left group bg-white shadow-md">
                         <div class="overflow-hidden">
                             <img src="/images/IMG_7617.JPG" alt="Children participating in Karatu Learning TaRL program in Kano"
@@ -337,9 +362,12 @@
                             <h3 class="text-2xl font-bold text-foreground mb-4">
                                 Teaching at the Right Level Pilot (Flagship Program)
                             </h3>
+
                             <p class="text-gray-600 mb-6 leading-relaxed">
-                                Our flagship TaRL methodology employs an adaptive learning approach that meets each student at their current learning level, ensuring no child is left behind.
+                                Our flagship TaRL methodology employs an adaptive learning approach that meets each
+                                student at their current learning level, ensuring no child is left behind.
                             </p>
+
                             <div class="flex items-start gap-2 mt-4">
                                 <i data-lucide="map-pin" class="h-8 w-8 text-green-600"></i>
                                 <span>
@@ -347,11 +375,20 @@
                                     Kano State, Nigeria
                                 </span>
                             </div>
+
                             <div class="flex items-start gap-2 mt-4">
                                 <i data-lucide="users-round" class="h-8 w-8 text-green-600"></i>
                                 <span>
                                     <strong>Current Reach</strong><br>
                                     398 students actively enrolled
+                                </span>
+                            </div>
+
+                            <div class="flex items-start gap-2 mt-4">
+                                <i data-lucide="trending-up" class="h-8 w-8 text-green-600"></i>
+                                <span>
+                                    <strong>Methodology</strong><br>
+                                    Adaptive learning personalized to each student's needs
                                 </span>
                             </div>
                         </div>
@@ -367,9 +404,12 @@
                             <h3 class="text-2xl font-bold text-foreground mb-4">
                                 Teacher Peer Mentorship – Building Sustainable Capacity
                             </h3>
+
                             <p class="text-gray-600 mb-6 leading-relaxed">
-                                Experienced teachers mentor their colleagues on TaRL methodology, creating a sustainable model for continuous learning and professional development.
+                                Experienced teachers mentor their colleagues on TaRL methodology, creating a sustainable
+                                model for continuous learning and professional development.
                             </p>
+
                             <div class="flex items-start gap-2 mt-4">
                                 <i data-lucide="users-round" class="h-8 w-8 text-green-600"></i>
                                 <span>
@@ -377,38 +417,328 @@
                                     57 teachers currently involved
                                 </span>
                             </div>
+
+                            <div class="flex items-start gap-2 mt-4">
+                                <i data-lucide="trending-up" class="h-8 w-8 text-green-600"></i>
+                                <span>
+                                    <strong>Program Structure</strong><br>
+                                    Peer-to-peer learning model guided by experienced mentors
+                                </span>
+                            </div>
+
+                            <div class="flex items-start gap-2 mt-4">
+                                <i data-lucide="graduation-cap" class="h-8 w-8 text-green-600"></i>
+                                <span>
+                                    <strong>Goal</strong><br>
+                                    Create lasting change through improved teaching practices
+                                </span>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
+                <div class="flex justify-center">
+                    <section class="w-[95%] rounded-lg bg-white p-12 gap-4 border-l-4 border-green-600">
+                        <h4 class="text-lg font-bold">Why These Programs Matter</h4>
+                        <div class="lg:flex justify-center items-center gap-12 text-gray-500">
+                            <p><strong>Evidence-based impact:</strong> TaRL methodology has been proven effective across
+                                multiple countries, consistently improving learning outcomes for students who have
+                                fallen behind</p>
+                            <p><strong>Sustainable model:</strong> By training teachers to mentor their peers, we create
+                                a self-sustaining ecosystem of professional development that continues long after
+                                initial implementation.</p>
+                        </div>
+                    </section>
+                </div>
+
             </div>
         </section>
-    </div>
-
-    <div class="flex justify-center items-center p-12">
-        <div class="animate-fade-in">
-            <h2 class="text-center text-3xl font-bold mb-12 text-foreground">Team Members</h2>
-            <div class="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
-                <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-innocent bg-cover bg-center">
-                            <img class="rounded-full w-full h-full object-cover" src="/images/innocent.jpg" alt="Innocent Waziri - Founder Karatu Learning">
+        
+        <div class="flex justify-center items-center p-12"><div class="animate-fade-in">
+                <h2 class="text-center text-3xl font-bold mb-12 text-foreground">Team Members</h2>
+                <div class="grid md:grid-cols-2 gap-8 justify-items-center max-w-4xl mx-auto">
+                    <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-innocent bg-cover bg-center">
+                                <img class="rounded-full w-full h-full object-cover" src="/images/innocent.jpg" alt="Innocent Waziri - Founder Karatu Learning">
+                            </div>
                         </div>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Innocent Waziri</h3>
+                        <p class="text-gray-600">Founder & Strategic Lead</p>
                     </div>
-                    <h3 class="text-xl font-bold text-foreground mb-2">Innocent Waziri</h3>
-                    <p class="text-gray-600">Founder & Strategic Lead</p>
-                </div>
 
-                <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-blessing bg-cover bg-center">
-                            <img class="rounded-full w-full h-full object-cover" src="/images/blessing.jpg" alt="Blessing Oyeneme - Co-Founder Karatu Learning">
+                    <div class="card-premium rounded-xl p-8 text-center w-full max-w-sm group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="h-40 w-40 rounded-full shadow-medium group-hover:shadow-large transition-all duration-500 team-image-blessing bg-cover bg-center">
+                                <img class="rounded-full w-full h-full object-cover" src="/images/blessing.jpg" alt="Blessing Oyeneme - Co-Founder Karatu Learning">
+                            </div>
                         </div>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Blessing Onyeneme</h3>
+                        <p class="text-gray-600">Co-Founder & Program Lead</p>
                     </div>
-                    <h3 class="text-xl font-bold text-foreground mb-2">Blessing Onyeneme</h3>
-                    <p class="text-gray-600">Co-Founder & Program Lead</p>
                 </div>
             </div>
         </div>
+        
+        <div id="impact" class="flex justify-center">
+            <section class="bg-white w-full p-16">
+                <h2 class="text-2xl font-bold text-black text-center">Our Impact</h2>
+                <p class="text-gray-500 text-center text-lg mt-10">Measuring success through real outcomes for students,
+                    teachers, and communities</p>
+                <section
+                    class="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 gap-12 mt-10 items-center justify-center">
+                    <div class="rounded-xl p-8 animate-slide-in-right bg-[#F6FCF7] h-full text-center">
+
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
+                            <i data-lucide="users-round" class="h-12 w-12 text-white"></i>
+                        </div>
+                        <p class="font-bold text-green-600 text-3xl">398</p>
+                        <h3 class="text-xl font-bold text-black mb-4">
+                            Students Enrolled
+                        </h3>
+
+                        <p class="text-gray-500 mb-6 text-md leading-relaxed">
+                            Currently participating in TaRL program
+                        </p>
+
+                    </div>
+                    <div class="rounded-xl p-8 animate-slide-in-right bg-[#F6FCF7] h-full text-center">
+
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
+                            <i data-lucide="book-open" class="h-12 w-12 text-white"></i>
+                        </div>
+                        <p class="font-bold text-green-600 text-3xl">57</p>
+                        <h3 class="text-xl font-bold text-black mb-4">
+                            Teachers Mentored
+                        </h3>
+
+                        <p class="text-gray-500 mb-6 text-md leading-relaxed">
+                            Actively engaged in peer mentorship
+                        </p>
+
+                    </div>
+                    <div class="rounded-xl p-8 animate-slide-in-right bg-[#F6FCF7] h-full text-center">
+
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
+                            <i data-lucide="trending-up" class="h-12 w-12 text-white"></i>
+                        </div>
+                        <p class="font-bold text-green-600 text-3xl">1</p>
+                        <h3 class="text-xl font-bold text-black mb-4">
+                            State Covered
+                        </h3>
+
+                        <p class="text-gray-500 mb-6 text-md leading-relaxed">
+
+                            Kano State pilot program
+
+                        </p>
+
+                    </div>
+                    <div class="rounded-xl p-8 animate-slide-in-right bg-[#F6FCF7] h-full text-center">
+
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 bg-green-700 rounded-full mx-auto">
+                            <i data-lucide="award" class="h-12 w-12 text-white"></i>
+                        </div>
+                        <p class="font-bold text-green-600 text-3xl">100%</p>
+                        <h3 class="text-xl font-bold text-black mb-4">
+                            Evidence-Based
+                        </h3>
+
+                        <p class="text-gray-500 mb-6 text-md leading-relaxed">
+
+                            Proven methodologies
+                        </p>
+
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="w-full bg-white flex items-center justify-center">
+            <div class=" bg-[#F6FCF7] w-[95%] rounded-lg">
+                <h4 class="font-bold text-3xl text-center mt-10">Program Achievements</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 sm:p-12">
+                    <section class="rounded-lg bg-white p-8 sm:p-12 gap-4 border-l-4 border-green-600">
+                        <h4 class="text-lg font-bold">Why These Programs Matter</h4>
+                        <div class="text-gray-500 mt-4">
+                            <p>
+                                Students receive personalized instruction matched to their current learning level,
+                                ensuring each child progresses at their own pace while building foundational skills.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="rounded-lg bg-white p-8 sm:p-12 gap-4 border-l-4 border-green-600">
+                        <h4 class="text-lg font-bold">Teacher Capacity Building</h4>
+                        <div class="text-gray-500 mt-4">
+                            <p>
+                                Through peer mentorship, we've created a sustainable model where experienced teachers
+                                share best practices, multiplying impact across entire schools.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="rounded-lg bg-white p-8 sm:p-12 gap-4 border-l-4 border-green-600">
+                        <h4 class="text-lg font-bold">Community Engagement</h4>
+                        <div class="text-gray-500 mt-4">
+                            <p>
+                                Local communities actively participate in program implementation, ensuring cultural
+                                relevance and long-term sustainability of educational improvements.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="rounded-lg bg-white p-8 sm:p-12 gap-4 border-l-4 border-green-600">
+                        <h4 class="text-lg font-bold">Scalable Model</h4>
+                        <div class="text-gray-500 mt-4">
+                            <p>
+                                Our pilot program in Kano State serves as a foundation for expansion across Nigeria,
+                                with methodologies proven effective in diverse educational contexts.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <section class="flex justify-center bg-white items-center w-full p-6 sm:p-16">
+            <div class="w-full sm:w-[70%] lg:w-[60%]">
+                <blockquote class="border-l-4 border-gray-400 pl-4 italic text-center text-xl font-normal">
+                    "Every child deserves education that meets them where they are and helps them reach
+                    their full potential. Through evidence-based approaches and dedicated teachers,
+                    we're making this vision a reality".
+                </blockquote>
+
+                <p class="text-center text-gray-500 text-lg mt-4">
+                    Karatu Learning Team
+                </p>
+            </div>
+        </section>
+
+        <section id="support" class="flex justify-center items-center bg-[#F6FCF7] w-full p-6 sm:p-10">
+            <div class="flex flex-col items-center text-center">
+                <h4 class="text-3xl text-black">Support Our Mission</h4>
+
+                <p class="text-lg text-gray-500 font-normal mt-4 max-w-xl">
+                    Join us in transforming education across Nigeria. There are multiple ways to make a lasting impact.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 mt-10 w-full">
+
+                    <div class="rounded-xl p-8 bg-white h-full w-full max-w-sm mx-auto">
+                        <div class="flex items-center justify-start mb-4 w-20 h-20 bg-green-700 rounded-full">
+                            <i data-lucide="heart" class="h-12 w-12 text-white mx-auto"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-black text-left mt-6 mb-4">Individual Donors</h3>
+
+                        <p class="text-gray-500 leading-relaxed text-left font-normal">
+                            Your financial contribution directly supports students and teachers in our programs.
+                            Every donation helps us expand our reach and deepen impact.
+                        </p>
+
+                        <button class="bg-green-700 px-12 rounded-lg py-2 mt-4 text-white">
+                            <a href="#contact">Make a Donation</a>
+                        </button>
+                    </div>
+
+                    <div class="rounded-xl p-8 bg-white h-full w-full max-w-sm mx-auto">
+                        <div class="flex items-center justify-start mb-4 w-20 h-20 bg-green-700 rounded-full">
+                            <i data-lucide="briefcase" class="h-12 w-12 text-white mx-auto"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-left mt-6 text-black mb-4">Corporate Partners</h3>
+
+                        <p class="text-gray-500 leading-relaxed text-left font-normal">
+                            Partner with us to create scalable impact. Corporate partnerships help us expand
+                            programs and reach more <br>communities.
+                        </p>
+
+                        <button class="bg-green-700 px-12 rounded-lg py-2 mt-4 text-white">
+                            <a href="#contact">Explore Partnership</a>
+                        </button>
+                    </div>
+
+                    <div class="rounded-xl p-8 bg-white h-full w-full max-w-sm mx-auto">
+                        <div class="flex items-center justify-start mb-4 w-20 h-20 bg-green-700 rounded-full">
+                            <i data-lucide="handshake" class="h-12 w-12 text-white mx-auto"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-black text-left mt-6 mb-4">Education Partners</h3>
+
+                        <p class="text-gray-500 leading-relaxed font-normal text-left">
+                            Collaborate with us to implement evidence-based programs in your community.
+                            We work with schools, NGOs, and government agencies.
+                        </p>
+
+                        <button class="bg-green-700 px-14 rounded-lg py-2 mt-4 text-white">
+                            <a href="#contact">Partner With Us</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="w-full flex flex-col lg:flex-row justify-center h-auto">
+            <div
+                class="bg-green-800 w-full lg:w-1/2 p-8 lg:p-14 text-white rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none space-y-4 flex flex-col justify-center">
+                <h4 class="text-font text-2xl text-left">Why Your Support Matters</h4>
+
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check" class="mt-1"></i>
+                    <p class="font-normal text-left">Proven Impact: Our evidence-based methodologies have demonstrated
+                        success in improving educational outcomes across multiple contexts.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check" class="mt-1"></i>
+                    <p class="font-normal text-left">Sustainable Model: We build local capacity through teacher training,
+                        creating lasting change that extends beyond our direct involvement.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check" class="mt-1"></i>
+                    <p class="font-normal text-left">Transparent Operations: We maintain clear communication with supporters
+                        about program progress, challenges, and achievements.</p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check" class="mt-1"></i>
+                    <p class="font-normal text-left">Scalable Solution: Your support helps us expand proven programs to
+                        reach more students and communities across Nigeria.</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-white w-full lg:w-1/2 p-8 lg:p-6 rounded-b-lg lg:rounded-r-lg space-y-4 flex flex-col justify-center">
+                <i data-lucide="mail" class="mt-1 text-green-800 font-bold h-10 w-8"></i>
+                <h4 class="text-lg font-bold text-left">Get Updates</h4>
+                <p class="font-normal text-left">Stay informed about our programs, impact stories, and opportunities to get
+                    involved</p>
+                <button class="bg-black py-4 px-12 text-white rounded-lg w-full"><a href="#contact"></a>Contact Us
+                    Today</button>
+            </div>
+        </div>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-6 w-full mt-10">
+            <div class="bg-white rounded-lg p-6">
+                <p class="text-green-600 text-3xl text-center font-bold mt-2">398+</p>
+                <p class="font-normal text-gray-500 text-center mt-1 mb-2">Students impacted by your support</p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6">
+                <p class="text-green-600 text-3xl text-center font-bold mt-2">57+</p>
+                <p class="font-normal text-gray-500 text-center mt-1 mb-2">Teachers empowered through training</p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6">
+                <p class="text-green-600 text-3xl text-center font-bold mt-2">1+</p>
+                <p class="font-normal text-gray-500 text-center mt-1 mb-2">States with active programs</p>
+            </div>
+        </section>
+
     </div>
 
     <section id="contact" class="py-20 bg-white">
@@ -416,7 +746,9 @@
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-3xl sm:text-4xl font-bold text-foreground mb-6">Get In Touch</h2>
                 <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                    Ready to make a difference? Contact us to learn more about our programs in Kano and Northern Nigeria.
+                    Ready to make a difference? Contact us to learn more about our programs, volunteer
+                    opportunities,
+                    or to discuss partnerships that can help transform lives through education.
                 </p>
             </div>
 
@@ -425,78 +757,244 @@
                     <div class="card-premium rounded-xl p-8">
                         <h3 class="text-xl font-semibold text-foreground mb-6">Contact Information</h3>
                         <div class="space-y-6">
-                            <div class="flex items-start gap-4">
+                            <div class="flex items-start gap-4 ">
                                 <i data-lucide="map-pin" class="w-6 h-6 text-primary mt-1 flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1 font-normal">Location</div>
-                                    <div class="text-gray-500 font-normal">Kano State, Nigeria<br>Operating across Northern Nigerian communities</div>
+                                    <div class="text-gray-500 font-normal">
+                                        Kano State, <br> Nigeria
+
+                                        Operating across Nigerian communities
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
                                 <i data-lucide="phone" class="w-6 h-6 text-primary flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1">Phone</div>
-                                    <div class="text-gray-600"><a href="tel:+2348135779873" style="text-decoration: none;" class="hover:text-black">+234 813 577 9873</a></div>
+                                    <div class="text-gray-600"><a href="tel:+234 813 577 9873"
+                                            style="text-decoration: none;" class="hover:text-black">+234 813 577
+                                            9873</a></div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-4">
                                 <i data-lucide="mail" class="w-6 h-6 text-primary flex-shrink-0"></i>
                                 <div>
                                     <div class="font-medium text-foreground mb-1">Email</div>
-                                    <div class="text-gray-600"><a href="mailto:innocent@karatulearning.org" class="hover:text-black" style="text-decoration: none;">innocent@karatulearning.org</a></div>
+                                    <div class="text-gray-600"> <a href="mailto:info@thelearningcamp.org"
+                                            class="hover:text-black"
+                                            style="text-decoration: none;">innocent@karatulearning.org</a></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="w-full bg-[#F6FCF7] p-6 ">
+                        <ul class="list-disc pl-5">
+                            <li>
+                                <p class="text-gray-500 font-normal"> <strong>Individual Donors:</strong> Learn
+                                    about donation opportunities and impact</p>
+                            </li>
+                            <li>
+                                <p class="text-gray-500 font-normal"> <strong>Corporate Partners: </strong> Explore
+                                    strategic partnership possibilities</p>
+                            </li>
+                            <li>
+                                <p class="text-gray-500 font-normal"><strong>Education Organizations:</strong>
+                                    Discuss program implementation and collaboration</p>
+                            </li>
+                            <li>
+                                <p class="text-gray-500 font-normal"><strong>Community Members:</strong>Get involved
+                                    with local initiatives</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="animate-slide-in-right">
                     <div class="card-premium rounded-xl p-8">
-                        <form id="contact-form" class="space-y-6" method="POST" action="https://formsubmit.co/innocent@karatulearning.org" target="hidden-iframe">
-                            <input type="hidden" name="_subject" value="New Website Contact Message">
+                        <form id="contact-form" class="space-y-6" method="POST"
+                            action="https://formsubmit.co/innocent@karatulearning.org" target="hidden-iframe">
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_subject" value="New Contact Message">
                             <h3 class="text-xl font-semibold text-foreground mb-4">Send us a message</h3>
+
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <label for="firstName" class="text-sm mb-2 block font-medium text-foreground">First Name</label>
-                                    <input id="firstName" name="First Name" required class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none" placeholder="First name" />
+                                    <label for="firstName"
+                                        class="text-sm mb-2 block font-medium text-foreground">First
+                                        Name</label>
+                                    <input id="firstName" name="First Name" required
+                                        class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                        placeholder="Your first name" />
                                 </div>
                                 <div>
-                                    <label for="lastName" class="text-sm mb-2 block font-medium text-foreground">Last Name</label>
-                                    <input id="lastName" name="Last Name" required class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none" placeholder="Last name" />
+                                    <label for="lastName"
+                                        class="text-sm mb-2 block font-medium text-foreground">Last
+                                        Name</label>
+                                    <input id="lastName" name="Last Name" required
+                                        class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                        placeholder="Your last name" />
                                 </div>
                             </div>
+
                             <div>
-                                <label for="email" class="text-sm mb-2 block font-medium text-foreground">Email</label>
-                                <input id="email" type="email" name="Email" required class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none" placeholder="email@example.com" />
+                                <label for="email"
+                                    class="text-sm mb-2 block font-medium text-foreground">Email</label>
+                                <input id="email" type="email" name="Email" required
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                    placeholder="your.email@example.com" />
                             </div>
                             <div>
-                                <label for="message" class="text-sm mb-2 block font-medium text-foreground">Message</label>
-                                <textarea id="message" name="Message" rows="4" required class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none resize-none" placeholder="How can we help?"></textarea>
+                                <label for="organization"
+                                    class="text-sm mb-2 block font-medium text-foreground">Organization
+                                    (Optional)</label>
+                                <input id="organization" type="text" name="organization"
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                                    placeholder="your organization" />
                             </div>
-                            <button type="submit" class="bg-green-700 w-full text-white px-8 py-4 rounded-lg text-base font-semibold shadow-large hover:bg-green-800 transition-colors">Send Message</button>
+                            <div>
+                                <label for="supportType" class="text-sm mb-2 block font-medium text-foreground">
+                                    How would you like to support?
+                                </label>
+
+                                <select id="supportType" name="SupportType" required
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none">
+                                    <option value="general" disabled selected>General</option>
+                                    <option value="volunteering">Volunteering</option>
+                                    <option value="donation">Making a Donation</option>
+                                    <option value="educational_partnership">Educational Partnership</option>
+                                    <option value="corporate_partnership">Corporate Partnership</option>
+                                </select>
+                            </div>
+
+
+                            <div>
+                                <label for="message"
+                                    class="text-sm mb-2 block font-medium text-foreground">Message</label>
+                                <textarea id="message" name="Message" rows="4" required
+                                    class="w-full border border-gray-300 px-4 py-3 rounded-lg transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none resize-none"
+                                    placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-green-700 w-full text-white px-8 py-4 rounded-lg text-base font-semibold shadow-large">
+                                Send Message
+                            </button>
                         </form>
                     </div>
                 </div>
+
                 <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+                <div id="thank-you-modal"
+                    class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
+                    <div class="bg-white rounded-lg p-6 max-w-sm w-full shadow text-center">
+                        <h2 class="text-xl font-semibold mb-4">Thank You!</h2>
+                        <p class="text-gray-500">We received your message. We'll get back to you soon.</p>
+                        <div class="mt-6">
+                            <button id="close-modal"
+                                class="bg-green-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white">
+    <footer class="bg-gray-900 text-white border-t border-gray-800" id="footer">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
                 <div class="lg:col-span-1">
-                    <h3 class="text-2xl font-bold mb-4">Karatu Learning</h3>
-                    <p class="text-gray-300 mb-6 leading-relaxed font-normal">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Karatu Learning</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed font-normal">
                         Transforming education across Northern Nigeria through innovative, evidence-based teaching methodologies.
                     </p>
                     <div class="flex items-center gap-2">
-                        <p class="text-green-600 font-normal text-md">D-Prize Grant Recipient</p>
+                        <p class="text-green-500 font-bold text-md">D-Prize Grant Recipient</p>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/wazirii" target="_blank"
+                            class="text-gray-400 hover:text-green-500 transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-learning-camp/" target="_blank"
+                            class="text-gray-400 hover:text-green-500 transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="mailto:innocent@karatulearning.org"
+                            class="text-gray-400 hover:text-green-500 transition-colors">
+                            <i data-lucide="mail" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Mission</a>
+                        </li>
+                        <li>
+                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Our Programs</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Impact</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-medium">Support Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Get Involved</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teaching at the Right Level</a>
+                        </li>
+                        <li>
+                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teacher Peer Mentorship</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Partner with Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Contact Info</h4>
+                    <div class="space-y-3 text-sm text-gray-400">
+                        <div>
+                            <div class="font-medium text-white flex items-center gap-2">
+                                <i data-lucide="phone" class="w-4 h-4 text-green-500"></i> Phone
+                            </div>
+                            <p class="mt-1">
+                                <a href="tel:+2348135779873" class="hover:text-green-500 transition-colors" style="text-decoration:none;">
+                                    +234 813 577 9873
+                                </a>
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="font-medium text-white flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4 text-green-500"></i> Email
+                            </div>
+                            <a href="mailto:innocent@karatulearning.org?subject=Inquiry" class="hover:text-green-500 transition-colors block mt-1">
+                                innocent@karatulearning.org
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
-                <div class="text-sm text-gray-400">
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <div class="text-sm text-gray-500">
                     © 2026 Karatu Learning. All rights reserved.
                 </div>
             </div>
@@ -504,7 +1002,10 @@
     </footer>
 
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
+
+        // Mobile menu functionality
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
@@ -516,20 +1017,103 @@
             closeIcon.classList.toggle('hidden');
         });
 
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"], .nav-link, .mobile-nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        // 📨 Contact form submission (FormSubmit + hidden iframe + modal)
         const contactForm = document.getElementById("contact-form");
         const iframe = document.querySelector("iframe[name='hidden-iframe']");
-        
+        const thankYouModal = document.getElementById("thank-you-modal");
+        const closeBtn = document.getElementById("close-modal");
+
+        // Show modal after form submission finishes
         iframe.addEventListener("load", function () {
+            // Only show if form was just submitted
             if (contactForm.dataset.submitted === "true") {
-                alert("Message Sent! We will get back to you shortly.");
+                thankYouModal.classList.remove("hidden");
+                thankYouModal.classList.add("flex");
+
+                // Reset form
                 contactForm.reset();
                 contactForm.dataset.submitted = "false";
             }
         });
 
+        // Intercept form submission
         contactForm.addEventListener("submit", function () {
-            contactForm.dataset.submitted = "true";
+            contactForm.dataset.submitted = "true"; // mark form as submitted
+        });
+
+        // Close modal button
+        closeBtn.addEventListener("click", () => {
+            thankYouModal.classList.add("hidden");
+            thankYouModal.classList.remove("flex");
+        });
+
+        // Optional: close modal on background click
+        thankYouModal.addEventListener("click", (e) => {
+            if (e.target === thankYouModal) {
+                thankYouModal.classList.add("hidden");
+                thankYouModal.classList.remove("flex");
+            }
+        });
+        // Donate button functionality
+        function handleDonate() {
+            // In a real application, this would redirect to a donation page
+            window.location.href = '/partner.html';
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-fade-in, .animate-slide-in-left, .animate-slide-in-right, .animate-slide-in-top, .animate-slide-in-bottom').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 1s ease-out';
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
         });
     </script>
 </body>
+
 </html>
