@@ -200,43 +200,44 @@
 
 <body class="min-h-screen bg-background font-sans">
     <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 w-full border-b border-gray-200 shadow-soft">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-primary hover:text-primary-light transition-colors cursor-pointer">
-                        <a href="/">Karatu Learning </a>
-                    </h1>
-                </div>
-
-                <nav class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#about" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Mission</a>
-                        <a href="#impact" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Impact</a>
-                        <a href="#programs" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Programs</a>
-                        <a href="#support" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Support Us</a>
-                        <a href="#contact" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Contact</a>
-                    </div>
-                </nav>
-
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-foreground hover:text-primary p-2 transition-colors">
-                        <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
-                        <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
-                    </button>
-                </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="/images/karatu.png" alt="Karatu Logo" class="h-24 w-auto object-contain">
+                </a>
             </div>
 
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-4 py-6 space-y-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-large">
-                    <a href="#about" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Mission</a>
-                    <a href="#impact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Impact</a>
-                    <a href="#programs" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Programs</a>
-                    <a href="#support" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Support Us</a>
-                    <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+            <nav class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#about" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Mission</a>
+                    <a href="#impact" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Impact</a>
+                    <a href="#programs" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Programs</a>
+                    <a href="#support" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Support Us</a>
+                    <a href="#contact" class="nav-link text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-100">Contact</a>
                 </div>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-foreground hover:text-primary p-2 transition-colors">
+                    <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+                    <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
+                </button>
             </div>
         </div>
-    </header>
+
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-4 py-6 space-y-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-large">
+                <a href="#about" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Mission</a>
+                <a href="#impact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Impact</a>
+                <a href="#programs" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Programs</a>
+                <a href="#support" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Support Us</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
 
     <section id="home" class="relative min-h-screen pb-32 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-center"></div>
@@ -908,98 +909,86 @@
     </section>
 
     <footer class="bg-gray-900 text-white border-t border-gray-800" id="footer">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="lg:col-span-1">
-                    <h3 class="text-2xl font-bold mb-4 text-white">Karatu Learning</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed font-normal">
-                        Transforming education across Northern Nigeria through innovative, evidence-based teaching methodologies.
-                    </p>
-                    <div class="flex items-center gap-2">
-                        <p class="text-green-500 font-bold text-md">D-Prize Grant Recipient</p>
-                    </div>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="https://www.facebook.com/wazirii" target="_blank"
-                            class="text-gray-400 hover:text-green-500 transition-colors">
-                            <i data-lucide="facebook" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/the-learning-camp/" target="_blank"
-                            class="text-gray-400 hover:text-green-500 transition-colors">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
-                        </a>
-                        <a href="mailto:innocent@karatulearning.org"
-                            class="text-gray-400 hover:text-green-500 transition-colors">
-                            <i data-lucide="mail" class="h-5 w-5"></i>
-                        </a>
-                    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            
+            <div class="lg:col-span-1">
+                <div class="mb-6">
+                    <img src="/images/Copy of Karatu-29.png" alt="Karatu Learning Logo" class="h-20 w-auto object-contain">
                 </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Mission</a>
-                        </li>
-                        <li>
-                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Our Programs</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Impact</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-medium">Support Us</a>
-                        </li>
-                    </ul>
+                <p class="text-gray-400 mb-6 leading-relaxed font-normal">
+                    Transforming education across Northern Nigeria through innovative, evidence-based teaching methodologies.
+                </p>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">
+                        D-Prize Grant Recipient
+                    </span>
                 </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4 text-white">Get Involved</h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teaching at the Right Level</a>
-                        </li>
-                        <li>
-                            <a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teacher Peer Mentorship</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Partner with Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4 text-white">Contact Info</h4>
-                    <div class="space-y-3 text-sm text-gray-400">
-                        <div>
-                            <div class="font-medium text-white flex items-center gap-2">
-                                <i data-lucide="phone" class="w-4 h-4 text-green-500"></i> Phone
-                            </div>
-                            <p class="mt-1">
-                                <a href="tel:+2348135779873" class="hover:text-green-500 transition-colors" style="text-decoration:none;">
-                                    +234 813 577 9873
-                                </a>
-                            </p>
-                        </div>
-                        <div class="mt-4">
-                            <div class="font-medium text-white flex items-center gap-2">
-                                <i data-lucide="mail" class="w-4 h-4 text-green-500"></i> Email
-                            </div>
-                            <a href="mailto:innocent@karatulearning.org?subject=Inquiry" class="hover:text-green-500 transition-colors block mt-1">
-                                innocent@karatulearning.org
-                            </a>
-                        </div>
-                    </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/wazirii" target="_blank" class="text-gray-400 hover:text-green-500 transition-colors">
+                        <i data-lucide="facebook" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/the-learning-camp/" target="_blank" class="text-gray-400 hover:text-green-500 transition-colors">
+                        <i data-lucide="linkedin" class="h-5 w-5"></i>
+                    </a>
+                    <a href="mailto:innocent@karatulearning.org" class="text-gray-400 hover:text-green-500 transition-colors">
+                        <i data-lucide="mail" class="h-5 w-5"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <div class="text-sm text-gray-500">
-                    © 2026 Karatu Learning. All rights reserved.
+            <div>
+                <h4 class="font-semibold mb-6 text-white uppercase tracking-wider text-sm">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Mission</a></li>
+                    <li><a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Our Programs</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Impact</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-medium">Support Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-6 text-white uppercase tracking-wider text-sm">Get Involved</h4>
+                <ul class="space-y-3">
+                    <li><a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teaching at the Right Level</a></li>
+                    <li><a href="#programs" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Teacher Peer Mentorship</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-green-500 transition-colors font-normal">Partner with Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-6 text-white uppercase tracking-wider text-sm">Contact Info</h4>
+                <div class="space-y-4 text-sm text-gray-400">
+                    <div class="group">
+                        <div class="font-medium text-white flex items-center gap-2 mb-1">
+                            <i data-lucide="phone" class="w-4 h-4 text-green-500"></i> Phone
+                        </div>
+                        <a href="tel:+2348135779873" class="hover:text-green-500 transition-colors block">
+                            +234 813 577 9873
+                        </a>
+                    </div>
+                    <div class="group">
+                        <div class="font-medium text-white flex items-center gap-2 mb-1">
+                            <i data-lucide="mail" class="w-4 h-4 text-green-500"></i> Email
+                        </div>
+                        <a href="mailto:innocent@karatulearning.org?subject=Inquiry" class="hover:text-green-500 transition-colors block truncate">
+                            innocent@karatulearning.org
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-gray-500 italic">
+                Empowering the next generation of Northern Nigerian scholars.
+            </p>
+            <div class="text-sm text-gray-500">
+                © 2026 Karatu Learning. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script>
         // Initialize Lucide icons
